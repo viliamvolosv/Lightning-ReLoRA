@@ -1,3 +1,4 @@
+import os
 import sys
 import math
 import torch
@@ -11,6 +12,8 @@ from .utils import Accuracy
 import torch._dynamo # Auto-resolve torch.compile errors.
 torch._dynamo.config.suppress_errors = True
 
+import torch._dynamo # Auto-resolve torch.compile errors.
+torch._dynamo.config.suppress_errors = True
 peft_supported_layers = [""]
 
 class LightningModel(L.LightningModule):
